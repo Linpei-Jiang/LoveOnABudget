@@ -1,0 +1,21 @@
+/*HEADER COLORING CHANGE WHEN USER SCROLL TO FULL SCREEN PAGES*/
+.icon1 {display: block;}
+.icon {display: none;}
+.logo {
+    background: -webkit-linear-gradient(#A8577E, #AA7DCE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.desktopNav a {color: rgba(168, 87, 126, 0.59);}
+.desktopNav .PositionMain a {color: #A8577E;}
+.desktopNav a:hover {color: #A8577E;}
+#header.transparent {background: #A8577E; .icon1 {display: none;} .icon {display: block;} .logo {background: -webkit-linear-gradient(white, white); -webkit-background-clip: text;} .desktopNav a {color: white;} .PositionMain a {color: white;}}
+#header.transparent #hamburger span {background: white;}
+#header.transparent .menu.active {background: #A8577E;}
+.menu.active span, .menu.active #hamburger span {background: white;}
+
+/*HERO SECTION*/
+.hero {
+    width: 100%;
+    height: 100vh;
+}
