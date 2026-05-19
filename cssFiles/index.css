@@ -1,21 +1,82 @@
 /*HEADER COLORING CHANGE WHEN USER SCROLL TO FULL SCREEN PAGES*/
-.icon1 {display: block;}
-.icon {display: none;}
-.logo {
-    background: -webkit-linear-gradient(#A8577E, #AA7DCE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;}
-
-.desktopNav a {color: rgba(168, 87, 126, 0.59);}
-.desktopNav .PositionMain a {color: #A8577E;}
-.desktopNav a:hover {color: #A8577E;}
-#header.transparent {background: #A8577E; .icon1 {display: none;} .icon {display: block;} .logo {background: -webkit-linear-gradient(white, white); -webkit-background-clip: text;} .desktopNav a {color: white;} .PositionMain a {color: white;}}
+.icon {display: block;}
+.PositionMain a {color: white;}
+#header.transparent {background: var(--darkPink);}
 #header.transparent #hamburger span {background: white;}
-#header.transparent .menu.active {background: #A8577E;}
-.menu.active span, .menu.active #hamburger span {background: white;}
 
 /*HERO SECTION*/
 .hero {
     width: 100%;
     height: 100vh;
+    background: #d8adc2;
+}
+
+/*ABOUT US SECTION*/
+.aboutUs, .ourGames {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.aboutUsContent, .ourGamesContent {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUsLeft, .aboutUsRight, .ourGamesLeft, .ourGamesRight {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+    height: 100%;
+}
+
+.aboutUsLeftPic12, .ourGamesRightPic12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 59%;
+    height: 260px;
+}
+
+.aboutUsLeftPic12 img, .ourGamesRightPic12 img {
+    width: 100%;
+    height: 49%;
+    background: blue;
+}
+
+.aboutUsLeftPic3, .ourGamesRightPic3  {
+    width: 40%;
+    height: 260px;
+}
+
+.aboutUsLeftPic3 img, .ourGamesRightPic3 img {
+    width: 100%;
+    height: 100%;
+    background: yellow;
+}
+
+.aboutUsRight, .ourGamesLeft {
+    height: 260px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ourGamesLeft {text-align: end;}
+
+@media (max-width: 800px) {
+    .aboutUs, .ourGames {margin: 20px 0;}
+    .aboutUsContent, .ourGamesContent {flex-direction: column;}
+    .aboutUsLeft, .aboutUsRight, .ourGamesLeft, .ourGamesRight {width: 100%;}
+    .aboutUsLeftPic12, .ourGamesRightPic12, .aboutUsLeftPic3, .ourGamesRightPic3 {height: 220px;}
+    .aboutUsRight, .ourGamesLeft {display: flex; height: auto; margin: 10px 0;}
+
+    .aboutUsRight {text-align: center;}
+    .ourGamesLeft {order: 2; text-align: center;}
+    .ourGamesRight {order: 1;}
 }

@@ -1,6 +1,14 @@
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 200vh;
+    height: auto;
     box-sizing: border-box;
     padding: 0 5%;
 }
+
+.sectionTitle {width: 100%; text-align: center; text-transform: uppercase; line-height: clamp(20px, 2vw, 2vw);}
+.sectionTitle h2 {font-size: clamp(24px, 3vw, 4vw); color: var(--darkPink);}
+.sectionTitle p {font-size: clamp(16px, 1.2vw, 2vw); padding: 0 60px; color: var(--lightPink); font-weight: 500;}
