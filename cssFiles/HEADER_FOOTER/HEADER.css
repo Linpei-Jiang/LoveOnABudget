@@ -41,9 +41,10 @@ header {
     margin-left: 5%;
     cursor: pointer;
 }
-.icon {
+.icon, .icon1 {
     height: 100%;
 }
+
 .logoSet h2 {
     color: white;
     margin-left: 5px;
@@ -52,7 +53,7 @@ header {
 
 @media (max-width: 430px)
 {
-    .icon {margin-left: 4%;}
+    .icon, .icon1 {margin-left: 4%;}
     .logoSet {margin-left: 2%;}
     .logoSet h2 {font-size: 22px;}
 }
@@ -140,7 +141,7 @@ header a:hover {color: white; font-weight: 500;}
     opacity: 1;
 }
 
-#header[data-page="home"] header {.PositionMain a {font-weight: 500;}}
-#header[data-page="games"] header {background: var(--darkPink); .PositionGames a {color: white; font-weight: 500;}}
-#header[data-page="download"] header {background: var(--darkPink); .PositionDownload a {color: white; font-weight: 500;}}
-#header[data-page="contact"] header {background: var(--darkPink); .PositionContact a {color: white; font-weight: 500;}}
+#header[data-page="home"] header {.icon1 {display: none;} .PositionMain a {font-weight: 500;}}
+#header[data-page="games"] header {.PositionGames a {font-weight: 500;}}
+#header[data-page="download"] header {.icon1 {display: none;} background: var(--darkPink); .PositionDownload a {color: white; font-weight: 500;}}
+#header[data-page="contact"] header {.icon1 {display: none;} background: var(--darkPink); .PositionContact a {color: white; font-weight: 500;}}
