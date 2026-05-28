@@ -1,6 +1,6 @@
-import { loadComponent } from "../include.js";
+import { loadComponent } from "./include.js";
 
-loadComponent("#header", "otherHTML/HEADER.html", () => {
+loadComponent("#header", "HEADER_FOOTER/HEADER.html", () => {
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
 
@@ -10,5 +10,4 @@ loadComponent("#header", "otherHTML/HEADER.html", () => {
     });
 });
 
-loadComponent("#footer", "otherHTML/FOOTER.html");
-
+loadComponent("#footer", "HEADER_FOOTER/FOOTER.html");

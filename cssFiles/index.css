@@ -1,82 +1,26 @@
-/*HEADER COLORING CHANGE WHEN USER SCROLL TO FULL SCREEN PAGES*/
-.icon {display: block;}
-.PositionMain a {color: white;}
-#header.transparent {background: var(--darkPink);}
-#header.transparent #hamburger span {background: white;}
+body {
 
-/*HERO SECTION*/
-.hero {
-    width: 100%;
-    height: 100vh;
-    background: #d8adc2;
 }
 
-/*ABOUT US SECTION*/
-.aboutUs, .ourGames {
-    margin: 80px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: auto;
+:root {
+    --scroll-y: 0px;
 }
 
-.aboutUsContent, .ourGamesContent {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+#HOME_HERO {
+    height: calc(100vh - 100px);
+    transform: translateY(calc(var(--scroll-y) * -1));
 }
 
-.aboutUsLeft, .aboutUsRight, .ourGamesLeft, .ourGamesRight {
-    display: flex;
-    justify-content: space-between;
-    width: 49%;
-    height: 100%;
+body.header-fixed header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.aboutUsLeftPic12, .ourGamesRightPic12 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 59%;
-    height: 260px;
-}
 
-.aboutUsLeftPic12 img, .ourGamesRightPic12 img {
-    width: 100%;
-    height: 49%;
-    background: blue;
-}
 
-.aboutUsLeftPic3, .ourGamesRightPic3  {
-    width: 40%;
-    height: 260px;
-}
 
-.aboutUsLeftPic3 img, .ourGamesRightPic3 img {
-    width: 100%;
-    height: 100%;
-    background: yellow;
-}
 
-.aboutUsRight, .ourGamesLeft {
-    height: 260px;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
 
-.ourGamesLeft {text-align: end;}
 
-@media (max-width: 800px) {
-    .aboutUs, .ourGames {margin: 20px 0;}
-    .aboutUsContent, .ourGamesContent {flex-direction: column;}
-    .aboutUsLeft, .aboutUsRight, .ourGamesLeft, .ourGamesRight {width: 100%;}
-    .aboutUsLeftPic12, .ourGamesRightPic12, .aboutUsLeftPic3, .ourGamesRightPic3 {height: 220px;}
-    .aboutUsRight, .ourGamesLeft {display: flex; height: auto; margin: 10px 0;}
-
-    .aboutUsRight {text-align: center;}
-    .ourGamesLeft {order: 2; text-align: center;}
-    .ourGamesRight {order: 1;}
-}
