@@ -1,1 +1,69 @@
 header {position: fixed;}
+
+.form {
+    padding-top: 100px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+}
+
+.formLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+input, textarea, input::placeholder, textarea::placeholder {color: white;}
+
+.formLeft h1 {
+    font-weight: 600;
+    color: var(--darkPink);
+    font-size: 2rem;
+}
+
+.formLeft hr {
+    margin-top: -.8rem;
+    border: none;
+    width: 120px;
+    height: 5px;
+    background: var(--darkPink);
+    border-radius: 1rem;
+}
+
+.formInput {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    font-weight: bold;
+    background: var(--darkPink);
+    border-radius: 50px;
+    transition: 0s;
+}
+
+.formLeft textarea {
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.formLeft button {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    background: var(--darkPink);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .formInput {width: 100%;}
+}
