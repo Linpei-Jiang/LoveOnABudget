@@ -167,14 +167,12 @@ body.header-fixed footer {background: var(--darkPink);}
 }
 
 .characterImg {
-    background: yellow;
-    height: 100%;
+    height: 70%;
     aspect-ratio: 1/1;
-    border-radius: 10px;
-    /*height: 300px;*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
+    border-radius: 50%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .characters ul {
@@ -183,10 +181,7 @@ body.header-fixed footer {background: var(--darkPink);}
 
 
 
-
-
-
-
+/*NEWSLETTER*/
 .newsLetter {
     width: 100%;
     display: flex;
